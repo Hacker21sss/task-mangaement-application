@@ -35,8 +35,16 @@ Features
 Add, edit, and delete tasks with due dates and optional file attachments.
 View detailed task information including remaining time until the due date.
 Built With
+
+Replace placeholders like `MONGO_URI` with actual values or provide instructions on how to set them up.
+
+### Additional Considerations
+
+- 
+
+By following these steps, we will enhance error handling in your Task Management Application and provide clear instructions for running it locally. Adjust the specifics based on your project structure and requirements.
+
 Front-End: HTML, CSS, JavaScript
 Back-End: Node.js, Express.js, MongoDB
 Libraries: Multer, Mongoose
-License
-This project is licensed under the MIT License - see the LICENSE file for details.
+
