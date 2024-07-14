@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Management Application</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Task Management Application</h1>
+        <div id="message-container"></div>
+        <div id="task-list">
+            <table id="tasks-table">
+                <thead>
+                    <tr>
+                        <th>Title</th>
+                        <th>Description</th>
+                        <th>Due Date</th>
+                        <th>Time Remaining</th>
+                        <th>View File</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+        <button id="add-task-btn">Add Task</button>
+    </div>
+
+    <div id="task-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <form id="task-form" enctype="multipart/form-data">
+                <label for="title"><strong>Title:</strong></label>
+                <input type="text" id="title" name="title" placeholder="Title" required>
+                
+                <label for="description"><strong>Description:</strong></label>
+                <textarea id="description" name="description" placeholder="Description" required></textarea>
+                
+                <label for="due-date"><strong>Due Date:</strong></label>
+                <input type="date" id="due-date" name="dueDate" required>
+                
+                <label for="file"><strong>File URL:</strong></label>
+                <input type="file" id="file" name="file">
+                
+                <button type="submit">Save Task</button>
+            </form>
+           
+        </div>
+    </div>
+    <div id="view-task-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="view-close">&times;</span>
+            <div id="task-detail">
+                <h2>Task Details</h2>
+                <p><strong>Title:</strong> <span id="view-title"></span></p>
+                <p><strong>Description:</strong> <span id="view-description"></span></p>
+                <p><strong>Due Date:</strong> <span id="view-due-date"></span></p>
+                <p><strong>File URL:</strong> <span id="view-file-url"></span></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
